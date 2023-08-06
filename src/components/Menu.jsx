@@ -3,7 +3,14 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { popular, malatang, breakfast, noodles, drinks } from "../constants";
+import {
+  menu,
+  popular,
+  malatang,
+  breakfast,
+  noodles,
+  drinks,
+} from "../constants";
 
 const MenuItem = ({ index, ch, eng, price, img }) => {
   return (
@@ -44,55 +51,13 @@ const Menu = () => {
         variants={textVariant()}
         className={`${styles.paddingX} text-white inset-0 max-w-8xl mx-auto`}
       >
-        <h2 className={`text-[30px] mt-10`}>
+        <h2 className={`text-[30px] mt-20`}>
           Menu<span className="mando font-medium"> 菜單</span>
         </h2>
       </motion.div>
 
-      <motion.div variants={fadeIn("", "", 0.1, 1)}>
-        <h2 className={`${styles.paddingX} text-white text-[23px]`}>
-          Popular 受歡迎
-        </h2>
-      </motion.div>
-
-      <div className="pl-[50px] flex flex-wrap gap-2">
-        {popular.map((item, index) => (
-          <MenuItem key={item.eng} index={index} {...item} />
-        ))}
-      </div>
-
-      <motion.div variants={fadeIn("", "", 0.1, 1)}>
-        <h2 className={`${styles.paddingX} text-white text-[23px]`}>
-          Malatang 港式麻辣燙
-        </h2>
-      </motion.div>
-
-      <div className="pl-[50px] flex flex-wrap gap-2">
-        {malatang.map((item, index) => (
-          <MenuItem key={item.eng} index={index} {...item} />
-        ))}
-      </div>
-
-      <motion.div variants={fadeIn("", "", 0.1, 1)}>
-        <h2 className={`${styles.paddingX} text-white text-[23px]`}>
-          Breakfast 全天早餐
-        </h2>
-      </motion.div>
-
-      <div className="pl-[50px] flex flex-wrap gap-2">
-        {breakfast.map((item, index) => (
-          <MenuItem key={item.eng} index={index} {...item} />
-        ))}
-      </div>
-
-      <motion.div variants={fadeIn("", "", 0.1, 1)}>
-        <h2 className={`${styles.paddingX} text-white text-[23px]`}>
-          Noodles 麵食全餐
-        </h2>
-      </motion.div>
-
-      <div className="pl-[50px] pb-5 flex flex-wrap gap-2">
-        {noodles.map((item, index) => (
+      <div className="pl-[50px] pb-[12%] flex flex-wrap gap-2">
+        {menu.map((item, index) => (
           <MenuItem key={item.eng} index={index} {...item} />
         ))}
       </div>

@@ -5,7 +5,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const Delivery = () => {
   return (
-    <div className="relative min-h-[700px] mx-auto grid">
+    <div className="relative min-h-[700px] mx-auto grid mt-6">
       <div className={`gridbox ${styles.paddingX}`}>
         <motion.div
           variants={textVariant()}
