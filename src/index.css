@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap");
+
+/* Since this project is React + Vite, must install tailwindcss postcss autoprefixer as well */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, Arial, Helvetica, "Microsoft YaHei New",
+    "Microsoft Yahei";
+  scroll-behavior: smooth;
+}
+
+.mando {
+  font-family: "Hiragino Kaku Gothic Pro", "WenQuanYi Zen Hei", "微軟正黑體",
+    "蘋果儷中黑", Helvetica, Arial, sans-serif;
+}
+
+/* .bg-responsive {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+} */
+
+.orange-bg {
+  background: rgba(226, 131, 22, 0.384);
+}
+
+.orange-text-gradient {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px rgb(255, 196, 0),
+    0 0 82px rgb(255, 196, 0), 0 0 92px rgb(255, 196, 0);
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+} */
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#grid {
+  display: grid;
+  grid-auto-flow: column; /* makes items fit into single row */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* grid width all equal */
+  grid-column-gap: 20px;
+}
+
+.gridbox {
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.wrapper {
+  margin-top: 20px;
+}
+
+.wrapper a {
+  text-decoration: none;
+}
+.wrapper a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.icon img {
+  width: 55px;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: white;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 170px;
+}
+
+.wrapper .button .icon {
+  height: 60px;
+  width: 60px;
+  float: left;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+}
+
+/* uber eats */
+.wrapper a:nth-child(1):hover .button .icon {
+  background: rgb(54, 170, 54);
+} /* fantuan */
+.wrapper a:nth-child(2):hover .button .icon {
+  background: cyan;
+} /* skip the dishes */
+.wrapper a:nth-child(3):hover .button .icon {
+  background: #ffd8b3;
+} /* ritual */
+.wrapper a:nth-child(4):hover .button .icon {
+  background: #0cc2ff;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.wrapper .button .icon i img {
+  border-radius: 30px;
+  margin-top: 3px;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+.wrapper a:nth-child(1):hover span {
+  color: rgb(12, 87, 12);
+} /* fantuan */
+.wrapper a:nth-child(2):hover span {
+  color: rgb(13, 165, 165);
+} /* skip the dishes */
+.wrapper a:nth-child(3):hover span {
+  color: #ec801b;
+} /* ritual */
+.wrapper a:nth-child(4):hover span {
+  color: #0d7496;
+}
+
+.details {
+  color: white;
+  margin-top: 60px;
+}
+
+.details-title {
+  font-weight: bolder;
+}
+
+.days {
+  font-weight: bolder;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
