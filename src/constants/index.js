@@ -203,28 +203,10 @@ const noodles = [
     img: "/snail noodles.png",
   },
   {
-    ch: "韓式炸醬麵",
-    eng: "JjaJang Myeon",
-    price: "$15.99 ",
-    img: "/jajang noodles.png",
-  },
-  {
-    ch: "彈牙墨魚丸米線",
-    eng: "Squid Noodles",
-    price: "$13.99 ",
-    img: "/squid ball noodles.png",
-  },
-  {
-    ch: "豬肉片菜湯米粉套餐",
-    eng: "Pork Vermicelli",
-    price: "$16.99 ",
-    img: "/pork vermicelli.png",
-  },
-  {
-    ch: "酸菜魚米線",
-    eng: "Sour Pickled Fish",
+    ch: "番茄濃湯牛肉米線",
+    eng: "Rice Noodles",
     price: "$18.99 ",
-    img: "/pickled fish noodles.png",
+    img: "/beef brisket noodles.png",
   },
   {
     ch: "農心辛拉麵",
@@ -233,16 +215,10 @@ const noodles = [
     img: "/shin ramen.jpg",
   },
   {
-    ch: "番茄濃湯牛肉米線",
-    eng: "Rice Noodles",
-    price: "$18.99 ",
-    img: "/beef brisket noodles.png",
-  },
-  {
-    ch: "新鮮蒸饅頭",
-    eng: "Tomato Udon",
-    price: "$15.29 ",
-    img: "/udon.png",
+    ch: "豬肉片菜湯米粉套餐",
+    eng: "Pork Vermicelli",
+    price: "$16.99 ",
+    img: "/pork vermicelli.png",
   },
 ];
 

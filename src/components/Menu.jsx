@@ -3,14 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import {
-  menu,
-  popular,
-  malatang,
-  breakfast,
-  noodles,
-  drinks,
-} from "../constants";
+import { popular, malatang, breakfast, noodles, drinks } from "../constants";
 
 const MenuItem = ({ index, ch, eng, price, img }) => {
   return (
@@ -46,8 +39,7 @@ const MenuItem = ({ index, ch, eng, price, img }) => {
 
 const Menu = () => {
   return (
-    // <section> for grouping semantically related content together under a heading
-    <div className="relative w-full h-auto mx-auto">
+    <div className="relative w-full h-auto mx-auto ">
       <motion.div
         variants={textVariant()}
         className={`${styles.paddingX} text-white inset-0 max-w-8xl mx-auto`}
@@ -99,20 +91,8 @@ const Menu = () => {
         </h2>
       </motion.div>
 
-      <div className="pl-[50px] flex flex-wrap gap-2">
+      <div className="pl-[50px] pb-5 flex flex-wrap gap-2">
         {noodles.map((item, index) => (
-          <MenuItem key={item.eng} index={index} {...item} />
-        ))}
-      </div>
-
-      <motion.div variants={fadeIn("", "", 0.1, 1)}>
-        <h2 className={`${styles.paddingX} text-white text-[23px]`}>
-          Drinks 飲料
-        </h2>
-      </motion.div>
-
-      <div className="pl-[50px] pb-16 flex flex-wrap gap-2">
-        {drinks.map((item, index) => (
           <MenuItem key={item.eng} index={index} {...item} />
         ))}
       </div>
