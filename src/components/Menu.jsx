@@ -57,11 +57,11 @@ const Menu = () => {
         </h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}>
+      <motion.div variants={fadeIn("", "", 0.1, 1)}>
         <h2 className={`${styles.paddingX} text-white text-[23px]`}>
           Popular 受歡迎
         </h2>
-      </motion.p>
+      </motion.div>
 
       <div className="pl-[50px] flex flex-wrap gap-2">
         {popular.map((item, index) => (
@@ -69,11 +69,11 @@ const Menu = () => {
         ))}
       </div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}>
+      <motion.div variants={fadeIn("", "", 0.1, 1)}>
         <h2 className={`${styles.paddingX} text-white text-[23px]`}>
           Malatang 港式麻辣燙
         </h2>
-      </motion.p>
+      </motion.div>
 
       <div className="pl-[50px] flex flex-wrap gap-2">
         {malatang.map((item, index) => (
@@ -81,11 +81,11 @@ const Menu = () => {
         ))}
       </div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}>
+      <motion.div variants={fadeIn("", "", 0.1, 1)}>
         <h2 className={`${styles.paddingX} text-white text-[23px]`}>
           Breakfast 全天早餐
         </h2>
-      </motion.p>
+      </motion.div>
 
       <div className="pl-[50px] flex flex-wrap gap-2">
         {breakfast.map((item, index) => (
@@ -93,11 +93,11 @@ const Menu = () => {
         ))}
       </div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}>
+      <motion.div variants={fadeIn("", "", 0.1, 1)}>
         <h2 className={`${styles.paddingX} text-white text-[23px]`}>
           Noodles 麵食全餐
         </h2>
-      </motion.p>
+      </motion.div>
 
       <div className="pl-[50px] flex flex-wrap gap-2">
         {noodles.map((item, index) => (
@@ -105,11 +105,11 @@ const Menu = () => {
         ))}
       </div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}>
+      <motion.div variants={fadeIn("", "", 0.1, 1)}>
         <h2 className={`${styles.paddingX} text-white text-[23px]`}>
           Drinks 飲料
         </h2>
-      </motion.p>
+      </motion.div>
 
       <div className="pl-[50px] pb-16 flex flex-wrap gap-2">
         {drinks.map((item, index) => (
