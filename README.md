@@ -1,4 +1,4 @@
-A [Personalized Restaurant Website](https://jonvincentius.netlify.app/) for the Hong Kong Malatang Restaurant Leung Sin Republic in Toronto. It is fully responsive for optimal viewing on desktops, tablets, and mobile phones. 
+A [Personalized Restaurant Website](https://leungsinrepublic.netlify.app) for the Hong Kong Malatang Restaurant Leung Sin Republic in Toronto. It is fully responsive for optimal viewing on desktops, tablets, and mobile phones. 
 Created using a React Framework (Vite) and the following technologies:
 * Framer Motion - open source, production-ready motion library for adding animations in React
 * TailwindCSS - utility-first CSS styling framework
